@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green3"
+    tools:context=".LabTestActivity">
+
+    <RelativeLayout
+        android:id="@+id/LLLabtest"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/greenbri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/VTBackLabtest"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/mainIcon"
+            android:src="@drawable/baseline_arrow_back_24_white"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="130dp"></ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/healthcare1"
+            android:id="@+id/mainIcon"
+            android:layout_centerHorizontal="true"></ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_shopping_cart_24"
+            android:id="@+id/VTCartLabTest"
+            android:layout_toRightOf="@+id/mainIcon"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"></ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewDDTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Các Gói Xét Nghiệm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLLabtest"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ListView
+        android:id="@+id/listViewLT"
+        android:layout_width="match_parent"
+        android:layout_height="568dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDDTitle2"
+        app:layout_constraintVertical_bias="0.753"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"></ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

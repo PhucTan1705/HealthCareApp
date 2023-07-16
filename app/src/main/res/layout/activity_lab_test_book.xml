@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabTestBookActivity"
+    android:background="@color/green3">
+
+    <RelativeLayout
+        android:id="@+id/LLCartLabtestBook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/greenbri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/VTBackCartLabtestBook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/mainIcon"
+            android:src="@drawable/baseline_arrow_back_24_white"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="130dp"></ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/healthcare1"
+            android:id="@+id/mainIcon"
+            android:layout_centerHorizontal="true"></ImageView>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextLBPinCode"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/ip_bg_4"
+        android:drawableLeft="@drawable/baseline_person_24_green"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Mã Pin"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/greenbri"
+        android:textColorHint="@color/greenbri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLBContactNumber" />
+
+    <EditText
+        android:id="@+id/editTextLBAddress"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ip_bg_4"
+        android:drawableLeft="@drawable/baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Địa Chỉ"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/greenbri"
+        android:textColorHint="@color/greenbri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLBFullName" />
+
+    <EditText
+        android:id="@+id/editTextLBContactNumber"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/ip_bg_4"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Liên Hệ"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/greenbri"
+        android:textColorHint="@color/greenbri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLBAddress" />
+
+    <TextView
+        android:id="@+id/textViewBookingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi Tiết Thanh Toán"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLCartLabtestBook"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <EditText
+        android:id="@+id/editTextLBFullName"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/ip_bg_4"
+        android:drawableLeft="@drawable/baseline_person_24_green"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Họ Tên"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/greenbri"
+        android:textColorHint="@color/greenbri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookingTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBooking"
+        android:layout_width="351dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_bg_2"
+        android:text="Thanh Toán"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLBPinCode" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

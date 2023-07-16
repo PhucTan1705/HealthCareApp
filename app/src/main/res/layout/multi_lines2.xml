@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="15dp"
+    android:outlineSpotShadowColor="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/line_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/greenbri"
+        android:textStyle="italic"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/line_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/green2"
+        android:textStyle="italic"
+        android:textSize="17sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/line_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="TextView"
+            android:textColor="@color/green2"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/line_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="TextView"
+            android:textColor="@color/green2"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/line_e"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="TextView"
+            android:textColor="@color/green2"
+            android:textSize="14sp"></TextView>
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

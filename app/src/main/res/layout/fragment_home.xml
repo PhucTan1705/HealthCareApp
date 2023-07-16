@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LL1">
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        android:textColor="@color/greenbri"
+        android:text="Default" />
+
+    <SearchView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ip_bg_3"
+        android:queryHint="@string/search_hint_bs"
+        android:iconifiedByDefault="false"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/searchview1"
+        android:searchIcon="@drawable/baseline_search_24"></SearchView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:text="Nổi Bật"
+        android:textStyle="bold"
+        android:padding="10dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVPopular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:text="Tin Sức Khỏe"
+        android:textStyle="bold"
+        android:padding="10dp"></TextView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:rowCount="10"
+        android:columnCount="1"
+        android:id="@+id/gridlayout"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:id="@+id/tin1"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tin1"
+                    android:padding="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#6f6f6f"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="40% bệnh nhân lao chưa được phát hiện, trẻ em đối diện nguy cơ"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tin2">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tin2"
+                    android:padding="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#6f6f6f"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="Thực phẩm chế biến nào nguy cơ ngộ độc botulinum?"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tin3">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tin3"
+                    android:padding="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#6f6f6f"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="Cần có trung tâm lưu trữ thuốc hiếm cấp quốc gia"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tin4">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tin4"
+                    android:padding="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#6f6f6f"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="Sẽ dự trữ thuốc hiếm, chấp nhận hủy bỏ nếu không dùng đến?"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tinnam">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tin5"
+                    android:padding="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#6f6f6f"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="Còn 7.000 hồ sơ cấp phép trang thiết bị y tế chưa được cấp phép, vì sao?"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tinsau">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tin6"
+                    android:padding="10dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="#6f6f6f"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:text="Đến bác sĩ cũng dễ bỏ quên ung thư của u mô mềm”"
+                    ></TextView>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

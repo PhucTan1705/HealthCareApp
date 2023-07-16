@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.healthcare_app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_LabTest"
+        android:name="com.example.healthcare_app.LabTestActivity"
+        android:label="Gói Xét Nghiệm"
+        tools:layout="@layout/activity_lab_test"></activity>
+
+    <activity
+        android:id="@+id/nav_BuyMedicine"
+        android:name="com.example.healthcare_app.BuyMedicineActivity"
+        android:label="Mua Thuốc"
+        tools:layout="@layout/activity_buy_medicine_activity" />
+
+    <activity
+        android:id="@+id/nav_FindDoctor"
+        android:name="com.example.healthcare_app.FindDoctorMainActivity"
+        android:label="Tìm Bác Sĩ"
+        tools:layout="@layout/activity_find_doctor_main" />
+
+    <activity
+        android:id="@+id/nav_HealthArticles"
+        android:name="com.example.healthcare_app.healthArticlesActivity"
+        android:label="Bài Viết Về Sức Khỏe"
+        tools:layout="@layout/activity_health_articles" />
+
+    <activity
+        android:id="@+id/nav_OrderDetails"
+        android:name="com.example.healthcare_app.OrderDetailsActivity"
+        android:label="Chi Tiết Đơn Hàng"
+        tools:layout="@layout/activity_order_details" />
+
+    <activity
+        android:id="@+id/nav_LogOut"
+        android:name="com.example.healthcare_app.LoginActivity"
+        android:label="Chi Tiết Đơn Hàng"
+        tools:layout="@layout/activity_login" />
+
+
+</navigation>
