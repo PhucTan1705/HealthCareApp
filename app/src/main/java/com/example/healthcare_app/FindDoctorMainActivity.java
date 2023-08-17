@@ -41,7 +41,7 @@ public class FindDoctorMainActivity extends AppCompatActivity {
         VTback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(FindDoctorMainActivity.this,HomeActivity2.class));
+                startActivity(new Intent(FindDoctorMainActivity.this, HomeActivity.class));
             }
         });
 

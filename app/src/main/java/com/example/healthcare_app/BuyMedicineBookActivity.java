@@ -49,7 +49,7 @@ public class BuyMedicineBookActivity extends AppCompatActivity implements Paymen
                 db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),"",Float.parseFloat(price[1].toString()),"medicine");
                 db.removeCart(username,"medicine");
                 //Toast.makeText(getApplicationContext(),"Thanh Toán Thành Công",Toast.LENGTH_SHORT).show();
-                //startActivity(new Intent(BuyMedicineBookActivity.this,HomeActivity2.class));
+                //startActivity(new Intent(BuyMedicineBookActivity.this,HomeActivity.class));
                 makepayment();
             }
         });
@@ -93,7 +93,7 @@ public class BuyMedicineBookActivity extends AppCompatActivity implements Paymen
     public void onPaymentSuccess(String s)
     {
         Toast.makeText(getApplicationContext(),"Hẹn Bác Sĩ Thành Công",Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(BuyMedicineBookActivity.this,HomeActivity2.class));
+        startActivity(new Intent(BuyMedicineBookActivity.this, HomeActivity.class));
     }
 
     @Override

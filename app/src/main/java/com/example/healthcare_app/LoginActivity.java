@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor.putString("username",username);
                         //to save our data with key and value
                         editor.apply();
-                        startActivity(new Intent(LoginActivity.this,HomeActivity2.class));
+                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                     }else {
                         Toast.makeText(getApplicationContext(),"Tên người dùng hoặc mật khẩu không hợp lệ", Toast.LENGTH_SHORT).show();
                     }

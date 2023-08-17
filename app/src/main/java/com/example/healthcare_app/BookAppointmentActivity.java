@@ -177,7 +177,7 @@ public class BookAppointmentActivity extends AppCompatActivity implements Paymen
     public void onPaymentSuccess(String s)
     {
         Toast.makeText(getApplicationContext(),"Hẹn Bác Sĩ Thành Công",Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(BookAppointmentActivity.this,HomeActivity2.class));
+        startActivity(new Intent(BookAppointmentActivity.this, HomeActivity.class));
     }
 
     @Override

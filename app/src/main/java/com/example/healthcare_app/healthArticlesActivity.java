@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -46,7 +45,7 @@ public class healthArticlesActivity extends AppCompatActivity {
         VTBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(healthArticlesActivity.this,HomeActivity2.class));
+                startActivity(new Intent(healthArticlesActivity.this, HomeActivity.class));
             }
         });
 

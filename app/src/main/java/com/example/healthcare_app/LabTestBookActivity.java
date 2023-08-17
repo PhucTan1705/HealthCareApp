@@ -50,7 +50,7 @@ public class LabTestBookActivity extends AppCompatActivity implements PaymentRes
                 db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),time.toString(),Float.parseFloat(price[1].toString()),"lab");
                 db.removeCart(username,"lab");
                 //Toast.makeText(getApplicationContext(),"Thanh Toán Thành Công",Toast.LENGTH_SHORT).show();
-                //startActivity(new Intent(LabTestBookActivity.this,HomeActivity2.class));
+                //startActivity(new Intent(LabTestBookActivity.this,HomeActivity.class));
                 makepayment();
             }
         });
@@ -95,7 +95,7 @@ public class LabTestBookActivity extends AppCompatActivity implements PaymentRes
     public void onPaymentSuccess(String s)
     {
         Toast.makeText(getApplicationContext(),"Hẹn Bác Sĩ Thành Công",Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(LabTestBookActivity.this,HomeActivity2.class));
+        startActivity(new Intent(LabTestBookActivity.this, HomeActivity.class));
     }
 
     @Override
