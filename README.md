@@ -24,7 +24,7 @@ Install the Razorpay Java SDK and integrate it with your Java-based website, app
 
 [Learn more](https://razorpay.com/docs/payments/)
 
-#### Getting started with Razorpay:
+#### Create Razorpay Account:
 
 If you are new to Razorpay, you can create a Razorpay account right from the mobile app. If you are an existing Razorpay user, log in to the Razorpay Payments Mobile app using your Razorpay Dashboard credentials.
 
@@ -78,3 +78,50 @@ Enter SQL statements terminated with a ";"
 sqlite>
 ```
 
+#### Save data using SQLite:
+
+Saving data to a database is ideal for repeating or structured data, such as contact information. This page assumes that you are familiar with SQL databases in general and helps you get started with SQLite databases on Android. The APIs you'll need to use a database on Android are available in the [android.database.sqlite](https://developer.android.com/reference/android/database/sqlite/package-summary) package.
+
+#### Define a schema and contract:
+
+- The schema is reflected in the SQL statements that you use to create your database.
+- A contract class is a container for constants that define names for URIs, tables, and columns.
+For example, the following contract defines the table name and column names for a single table representing an RSS feed:
+
+```
+public final class FeedReaderContract {
+    // To prevent someone from accidentally instantiating the contract class,
+    // make the constructor private.
+    private FeedReaderContract() {}
+
+    /* Inner class that defines the table contents */
+    public static class FeedEntry implements BaseColumns {
+        public static final String TABLE_NAME = "entry";
+        public static final String COLUMN_NAME_TITLE = "title";
+        public static final String COLUMN_NAME_SUBTITLE = "subtitle";
+    }
+}
+```
+
+#### Create a database using an SQL helper
+
+Once you have defined how your database looks, you should implement methods that create and maintain the database and tables. Here are some typical statements that create and delete a table:
+
+```
+private static final String SQL_CREATE_ENTRIES =
+    "CREATE TABLE " + FeedEntry.TABLE_NAME + " (" +
+    FeedEntry._ID + " INTEGER PRIMARY KEY," +
+    FeedEntry.COLUMN_NAME_TITLE + " TEXT," +
+    FeedEntry.COLUMN_NAME_SUBTITLE + " TEXT)";
+
+private static final String SQL_DELETE_ENTRIES =
+    "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;
+```
+
+[Learn More](https://developer.android.com/training/data-storage/sqlite#java)
+
+### 4. Run project:
+
+- Step 1: Download and Unzip the github project to a folder.
+- Step 2: Open Android Studio. Go to File -> New -> Import Project.
+- Step 3: Choose the specific project you want to import and then click Next->Finish.
