@@ -37,7 +37,7 @@ import com.razorpay.*;
 #### Installation:
 
 - You can install Razorpay using Gradle:
-  + Download and [install Gradle](https://gradle.org/install/) on your system.
+  + Download and [Install Gradle](https://gradle.org/install/) on your system.
 - Download the latest [Source code](https://github.com/razorpay/razorpay-java/releases) zip file from the Releases section of GitHub.
 - Unzip the file and add this dependency to the build file of the project:
 
@@ -49,8 +49,31 @@ implementation 'com.razorpay:razorpay-java:x.y.z" //x.y.z = the version you want
 
 #### Getting started with Razorpay:
 
-- If you are new to Razorpay, you can create a Razorpay account right from the mobile app. If you are an existing Razorpay user, log in to the Razorpay Payments Mobile app using your Razorpay Dashboard credentials.
+If you are new to Razorpay, you can create a Razorpay account right from the mobile app. If you are an existing Razorpay user, log in to the Razorpay Payments Mobile app using your Razorpay Dashboard credentials.
 
 [Learn more](https://razorpay.com/docs/payments/mobile-app/get-started/#create-a-new-account)
 
+### 2. Getting started with SQLite:
+
+SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. The code for SQLite is in the public domain and is thus free for use for any purpose, commercial or private. SQLite is the most widely deployed database in the world with more applications than we can count, including several high-profile projects.
+
+[Learn more](https://www.sqlite.org/about.html)
+[Documentation](https://www.sqlite.org/docs.html)
+
+### 3. Set Up SQLite:
+
+#### Install SQLite:
+
+- Step 1 − Go to SQLite [Download Page](https://www.sqlite.org/download.html), and download precompiled binaries from Windows section.
+- Step 2 − Download sqlite-tools-win-x64.zip and sqlite-dll-win-x64.zip zipped files.
+- Step 3 − Create a folder C:\>sqlite and unzip above two zipped files in this folder, which will give you sqlite3.def, sqlite3.dll and sqlite3.exe files.
+- Step 4 − Add C:\>sqlite in your PATH environment variable and finally go to the command prompt and issue sqlite3 command, which should display the following result:
+
+```
+C:\>sqlite3
+SQLite version 3.7.15.2 2013-01-09 11:53:05
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite>
+```
 
