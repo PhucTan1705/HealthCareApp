@@ -103,7 +103,7 @@ public final class FeedReaderContract {
 }
 ```
 
-#### Create a database using an SQL helper
+#### Create a database using an SQL helper:
 
 Once you have defined how your database looks, you should implement methods that create and maintain the database and tables. Here are some typical statements that create and delete a table:
 
@@ -125,3 +125,4 @@ private static final String SQL_DELETE_ENTRIES =
 - Step 1: Download and Unzip the github project to a folder.
 - Step 2: Open Android Studio. Go to File -> New -> Import Project.
 - Step 3: Choose the specific project you want to import and then click Next->Finish.
+- Step 4: Gradle will build automatically, and it will be ready for you to use. After it's finished, click Run app to run the project.
