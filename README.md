@@ -24,6 +24,12 @@ Install the Razorpay Java SDK and integrate it with your Java-based website, app
 
 [Learn more](https://razorpay.com/docs/payments/)
 
+#### Getting started with Razorpay:
+
+If you are new to Razorpay, you can create a Razorpay account right from the mobile app. If you are an existing Razorpay user, log in to the Razorpay Payments Mobile app using your Razorpay Dashboard credentials.
+
+[Learn more](https://razorpay.com/docs/payments/mobile-app/get-started/#create-a-new-account)
+
 #### Dependencies:
 
 - You must use Java v15 or higher. Know more about the [latest java versions](https://www.java.com/releases/)
@@ -47,17 +53,12 @@ implementation 'com.razorpay:razorpay-java:x.y.z" //x.y.z = the version you want
 
 [Learn more](https://razorpay.com/docs/payments/server-integration/java/)
 
-#### Getting started with Razorpay:
-
-If you are new to Razorpay, you can create a Razorpay account right from the mobile app. If you are an existing Razorpay user, log in to the Razorpay Payments Mobile app using your Razorpay Dashboard credentials.
-
-[Learn more](https://razorpay.com/docs/payments/mobile-app/get-started/#create-a-new-account)
-
 ### 2. Getting started with SQLite:
 
 SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. The code for SQLite is in the public domain and is thus free for use for any purpose, commercial or private. SQLite is the most widely deployed database in the world with more applications than we can count, including several high-profile projects.
 
 [Learn more](https://www.sqlite.org/about.html)
+
 [Documentation](https://www.sqlite.org/docs.html)
 
 ### 3. Set Up SQLite:
