@@ -20,9 +20,11 @@ scheduling appointments with doctors, and quickly staying updated with useful me
 
 ### 1. Razorpay:
 
-Install the Razorpay Java SDK and integrate it with your Java-based website to accept payments, initiate refunds and much more.
+Install the Razorpay Java SDK and integrate it with your Java-based website, app to accept payments, initiate refunds and much more.
 
-* Dependencies:
+[Learn more](https://razorpay.com/docs/payments/)
+
+#### Dependencies:
 
 - You must use Java v15 or higher. Know more about the [latest java versions](https://www.java.com/releases/)
 - Import the following packages before your get started:
@@ -32,7 +34,7 @@ import org.json.JSONObject;
 import com.razorpay.*;
 ```
 
-* Installation
+#### Installation:
 
 - You can install Razorpay using Gradle:
   + Download and [install Gradle](https://gradle.org/install/) on your system.
@@ -42,3 +44,13 @@ import com.razorpay.*;
 ```
 implementation 'com.razorpay:razorpay-java:x.y.z" //x.y.z = the version you want to install
 ```
+
+[Learn more](https://razorpay.com/docs/payments/server-integration/java/)
+
+#### Getting started with Razorpay:
+
+- If you are new to Razorpay, you can create a Razorpay account right from the mobile app. If you are an existing Razorpay user, log in to the Razorpay Payments Mobile app using your Razorpay Dashboard credentials.
+
+[Learn more](https://razorpay.com/docs/payments/mobile-app/get-started/#create-a-new-account)
+
+
