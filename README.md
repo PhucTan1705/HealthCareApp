@@ -1,6 +1,6 @@
 # Language
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/PhucTan1705/HealthCareApp/blob/master/README.md)
-[![vn](https://img.shields.io/badge/lang-vn-red.svg)](https://github.com/PhucTan1705/HealthCareApp/blob/master/README.VN.md)
+[![vn](https://img.shields.io/badge/lang-vn-red.svg)](https://github.com/PhucTan1705/HealthCareApp/blob/master/README.VN.MD)
 
 ---
 # The HealthCare App
